@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Diwali!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Video -->
+  <video id="background-video" muted class="background-video">
+    <source src="./PARTICLES Fireworks light up the sky for celebration background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Name Input Form -->
+  <div class="name-form">
+    <label for="name">Enter Your Name:</label>
+    <input type="text" id="name" placeholder="Your Name">
+    <button onclick="showGreeting()">Submit</button>
+  </div>
+
+  <!-- Main Content with Custom Greeting -->
+  <div class="main-wrapper" style="display:none;">
+    <div class="container">
+      <h1 id="greeting">🎆 Happy Diwali! 🎆</h1>
+      <p>Wishing you a Diwali filled with light, joy, and prosperity!</p>
+      <button onclick="playVideo()">Click Me🎆</button>
+      <!-- <button onclick="sparkle()">Click for Sparkles 🎇</button> -->
+    </div>
+
+    <!-- Next Page Section -->
+    <div class="next-page-container">
+      <h2>✨ Must Visit! ✨</h2>
+      <p>Discover more surprises on the next page!</p>
+      <a href="next.html"><button>Go to Next Page ➡️</button></a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
