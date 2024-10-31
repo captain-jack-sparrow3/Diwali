@@ -104,8 +104,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;     /* Full viewport height */
-    padding: 20px;
+    width: 90%; /* Adjusts width to 90% of the screen */
+    max-width: 640px; /* Sets a maximum width */
+    margin: auto; /* Centers container */
     background-color: transparent;
     border-radius: 3px /* Light gray background for contrast */
 }
@@ -114,4 +115,9 @@
 video::-webkit-media-controls-panel {
     background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;        /* White color for controls */
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
 }
